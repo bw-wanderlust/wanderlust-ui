@@ -139,6 +139,7 @@ html {
 }
 body {
   font-family: 'Livvic', sans-serif;
+  background-color: #416165;
 }
 h1,
 h2,
@@ -186,7 +187,7 @@ header nav a:hover {
   max-width: 90%;
   position: relative;
   margin: 0 auto;
-  background-color: #306b34;
+  background-color: cadetblue;
 }
 .slideshow-container img {
   height: 250px;
@@ -233,4 +234,25 @@ header nav a:hover {
   to {
     opacity: 1;
   }
+}
+.main-container {
+  max-width: 500px;
+}
+.main-container .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid green;
+}
+.main-container .card {
+  width: 90%;
+  border: 1px solid red;
+}
+.main-container img {
+  width: 300;
+  height: 200px;
+  margin-left: 10%;
+  border: 1px solid orange;
 }

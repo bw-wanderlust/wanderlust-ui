@@ -6,7 +6,7 @@
     max-width: 90%;
     position: relative;
     margin: 0 auto;
-    background-color: @green;
+    background-color: cadetblue;
 
     img{
         height: 250px;
@@ -55,4 +55,27 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+//MAIN CONTENT
+.main-container {
+    max-width: 500px;
+
+    .card-container {
+        width: 100%;
+        .flex(flex, center, center);
+        flex-direction: column;
+        border: 1px solid green;
+    }
+    .card {
+        width: 90%;
+        border: 1px solid red;
+    }
+    img {
+        width: 300;
+        height: 200px;
+        margin-left: 10%;
+        border: 1px solid orange;
+    }
+
 }
