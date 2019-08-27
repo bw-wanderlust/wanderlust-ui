@@ -193,8 +193,7 @@ h6 {
 .slideshow-container .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.slideshow-container .previous .next,
-.slideshow-container .next .next {
+.slideshow-container .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -203,7 +202,7 @@ h6 {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #416165;
+  background-color: grey;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
