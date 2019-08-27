@@ -155,7 +155,10 @@ h6 {
 h1 {
   font-size: 2.5rem;
 }
-header {
+h2 {
+  font-size: 2.3rem;
+}
+.nav-bar {
   background-color: #0b3948;
   display: flex;
   justify-content: space-between;
@@ -163,34 +166,46 @@ header {
   flex-direction: column;
   margin-bottom: 2%;
 }
-header h1 {
+@media (min-width: 800px) {
+  .nav-bar {
+    flex-direction: row;
+  }
+}
+.nav-bar h1 {
   color: #eff1ed;
   padding: 2%;
 }
-header nav {
+.nav-bar .links {
   width: 60%;
   display: flex;
   flex-direction: column;
   padding: 2%;
 }
-header nav a {
+@media (min-width: 800px) {
+  .nav-bar .links {
+    flex-direction: row;
+  }
+}
+.nav-bar .links a {
   color: #eff1ed;
   text-decoration: none;
   align-self: center;
   font-size: 1.1rem;
 }
-header nav a:hover {
+.nav-bar .links a:hover {
   text-decoration: underline;
   font-size: 1.4rem;
 }
 .slideshow-container {
-  max-width: 90%;
+  width: 90%;
+  max-width: 800px;
   position: relative;
   margin: 0 auto;
   background-color: cadetblue;
 }
 .slideshow-container img {
-  height: 250px;
+  height: auto;
+  max-height: 400px;
   padding: 2%;
 }
 .slideshow-container .mySlides {
@@ -238,21 +253,59 @@ header nav a:hover {
 .main-container {
   max-width: 500px;
 }
+@media (min-width: 800px) {
+  .main-container {
+    max-width: 800px;
+  }
+}
 .main-container .card-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid green;
+  margin: 0 auto;
 }
-.main-container .card {
+.main-container .card-container .card {
   width: 90%;
-  border: 1px solid red;
+  margin: 2% 0;
+  background-color: #eff1ed;
+  border: 2px solid #eff1ed;
 }
-.main-container img {
+.main-container .card-container .puzzle-img {
+  margin-left: 15%;
+}
+.main-container .card-container .bungalow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-container .card-container .items-img {
+  margin-left: 18.5%;
+}
+.main-container .card-container .tiles-img {
+  margin-left: 15.5%;
+}
+.main-container .card-container .create-img {
+  margin-left: 10.5%;
+}
+.main-container .card-container img {
   width: 300;
   height: 200px;
-  margin-left: 10%;
-  border: 1px solid orange;
+  padding: 2%;
+  border: 2px solid cadetblue;
+}
+.main-container .card-container .card-text {
+  border: 2px solid #416165;
+  padding: 2%;
+  margin: 2%;
+  line-height: 1.5;
+  background-color: cadetblue;
+  color: #eff1ed;
+}
+.main-container .card-container h2 {
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  color: #0b3948;
 }

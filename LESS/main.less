@@ -3,15 +3,16 @@
 
 //Slideshow container
 .slideshow-container {
-    max-width: 90%;
+    width: 90%;
+    max-width: 800px;
     position: relative;
     margin: 0 auto;
     background-color: cadetblue;
 
     img{
-        height: 250px;
-        padding: 2%;
-                                                      ;
+        height: auto;
+        max-height: 400px;
+        padding: 2%;                                            
     }
 
     //hide images by default
@@ -61,21 +62,60 @@
 .main-container {
     max-width: 500px;
 
+    @media @tablet{
+        max-width: 800px;
+    }
+    
+
     .card-container {
         width: 100%;
         .flex(flex, center, center);
         flex-direction: column;
-        border: 1px solid green;
+        margin: 0 auto;
+        
+        .card {
+            width: 90%;
+            margin: 2% 0;
+            background-color: @white; 
+            border: 2px solid @white;
+        }
+        .puzzle-img{
+            margin-left: 15%;
+        }
+        .bungalow{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .items-img{
+            margin-left: 18.5%;
+        }
+        .tiles-img{
+            margin-left: 15.5%;
+        }
+        .create-img{
+            margin-left: 10.5%;
+        }
+        img {
+            width: 300;
+            height: 200px;
+            padding: 2%;
+            border: 2px solid cadetblue;
+        }
+        .card-text{
+            border: 2px solid @blue-grey;
+            padding: 2%;
+            margin: 2%;
+            line-height: 1.5;
+            background-color: cadetblue;
+            color: @white; 
+        }
+        h2{
+            text-align: center;
+            padding: 1%;
+            font-weight: bold;
+            color: @dk-blue;
+        }
     }
-    .card {
-        width: 90%;
-        border: 1px solid red;
-    }
-    img {
-        width: 300;
-        height: 200px;
-        margin-left: 10%;
-        border: 1px solid orange;
-    }
-
+    
 }
