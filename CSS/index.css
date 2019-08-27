@@ -162,7 +162,7 @@ h3 {
   font-size: 2.1rem;
 }
 h4 {
-  font-size: 1.9;
+  font-size: 1.9rem;
 }
 .nav-bar {
   background-color: #0b3948;
@@ -343,5 +343,13 @@ h4 {
 }
 .story p {
   color: #eff1ed;
-  line-height: 1.2;
+  line-height: 1.5;
+  padding: 2%;
+}
+.story li {
+  list-style: circle;
+  list-style-position: inside;
+  padding: 2%;
+  line-height: 1.5;
+  color: #eff1ed;
 }
