@@ -202,6 +202,41 @@ h4 {
   text-decoration: underline;
   font-size: 1.4rem;
 }
+footer {
+  background: #0b3948;
+  color: #eff1ed;
+  margin: 2% 0;
+  padding-top: 2%;
+}
+footer .subscription {
+  text-align: center;
+  margin: 2% 0;
+  background: #416165;
+}
+footer .subscription h3 {
+  font-weight: bold;
+  color: #721817;
+}
+footer .subscription p {
+  font-weight: bold;
+  padding: 1%;
+  line-height: 1.5;
+}
+footer .subscription button {
+  background: #721817;
+  color: #eff1ed;
+  padding: 1%;
+}
+footer .subscription button:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+footer h3 {
+  text-decoration: underline;
+}
+footer h4 {
+  font-size: 1.1;
+}
 .slideshow-container {
   width: 90%;
   max-width: 800px;
