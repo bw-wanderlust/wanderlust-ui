@@ -152,64 +152,34 @@ h6 {
   font-family: 'Dancing Script', cursive;
 }
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 90%;
   position: relative;
   margin: 0 auto;
+  background-color: #306b34;
+}
+.slideshow-container img {
+  height: 250px;
+  padding: 2%;
 }
 .slideshow-container .mySlides {
   display: none;
 }
 .slideshow-container .mySlides .numbertext {
-  color: #0b3948;
-  font-size: 0.18rem;
+  color: #eff1ed;
+  font-size: 1.2rem;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 .slideshow-container .mySlides .text {
-  color: #0b3948;
-  font-size: 0.19rem;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.slideshow-container .previous,
-.slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
   color: #eff1ed;
-  font-weight: bold;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.slideshow-container .previous:hover,
-.slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: grey;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #0b3948;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding-top: 4%;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  text-align: center;
 }
 .fade {
   -webkit-animation-name: fade;
