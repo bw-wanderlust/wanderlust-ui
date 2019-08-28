@@ -248,10 +248,9 @@ p {
   margin-bottom: 2%;
 }
 .footer-links a {
-  color: #0b3948;
+  color: #eff1ed;
   text-decoration: none;
   margin: 10%;
-  background: #eff1ed;
 }
 .footer-links a:hover {
   text-decoration: underline;
@@ -333,23 +332,14 @@ p {
   margin: 2% 0;
   background-color: #eff1ed;
   border: 2px solid #eff1ed;
-}
-.main-container .card-container .puzzle-img {
-  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-container .card-container .bungalow {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.main-container .card-container .items-img {
-  margin-left: 18.5%;
-}
-.main-container .card-container .tiles-img {
-  margin-left: 15.5%;
-}
-.main-container .card-container .create-img {
-  margin-left: 10.5%;
 }
 .main-container .card-container img {
   width: 300;
@@ -370,6 +360,10 @@ p {
   padding: 1%;
   font-weight: bold;
   color: #0b3948;
+}
+.main-container .card-container img .puzzle-img {
+  align-self: center;
+  margin: 0 auto;
 }
 .story {
   width: 85%;
