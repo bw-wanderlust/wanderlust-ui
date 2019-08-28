@@ -247,13 +247,11 @@ p {
   padding: 1%;
   margin-bottom: 2%;
 }
-nav {
-  background: #eff1ed;
-}
 .footer-links a {
   color: #0b3948;
   text-decoration: none;
   margin: 10%;
+  background: #eff1ed;
 }
 .footer-links a:hover {
   text-decoration: underline;
