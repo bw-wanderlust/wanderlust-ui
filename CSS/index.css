@@ -233,9 +233,32 @@ footer .subscription button:hover {
 }
 footer h3 {
   text-decoration: underline;
+  padding: 1%;
 }
 footer h4 {
   font-size: 1.1;
+  padding: 1%;
+}
+footer .copy {
+  text-align: center;
+  margin: 5% 0;
+}
+p {
+  padding: 1%;
+  margin-bottom: 2%;
+}
+nav {
+  background: #eff1ed;
+}
+.footer-links a {
+  color: #0b3948;
+  text-decoration: none;
+  margin: 10%;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 .slideshow-container {
   width: 90%;
