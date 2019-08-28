@@ -327,6 +327,13 @@ p {
   flex-direction: column;
   margin: 0 auto;
 }
+@media (min-width: 800px) {
+  .main-container .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .main-container .card-container .card {
   width: 90%;
   margin: 2% 0;
@@ -336,10 +343,21 @@ p {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 800px) {
+  .main-container .card-container .card {
+    width: 40%;
+    height: 450px;
+  }
+}
 .main-container .card-container .bungalow {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media (min-width: 800px) {
+  .main-container .card-container .bungalow {
+    flex-direction: column;
+  }
 }
 .main-container .card-container img {
   width: 300;
@@ -364,6 +382,9 @@ p {
 .main-container .card-container img .puzzle-img {
   align-self: center;
   margin: 0 auto;
+}
+.main-container .register {
+  border: red;
 }
 .story {
   width: 85%;
