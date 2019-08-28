@@ -1,0 +1,182 @@
+
+
+
+//Slideshow container
+.slideshow-container {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    background-color: cadetblue;
+
+    img{
+        height: auto;
+        max-height: 400px;
+        padding: 2%;                                            
+    }
+
+    //hide images by default
+    .mySlides {
+        display: none;
+
+        .numbertext {
+            color: @white;
+            font-size: 1.2rem;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .text {
+            color: @white;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            padding-top: 4%;
+            position: absolute;
+            bottom: 0px;
+            width: 95%;
+            text-align: center;
+        }//closes text
+       //closes prev/next
+    }//closes mySlides
+   
+}//closes slideshow-container
+
+//Fading animation
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+//MAIN CONTENT
+.main-container {
+    max-width: 500px;
+
+    @media @tablet{
+        max-width: 800px;
+    }
+    
+
+    .card-container {
+        width: 100%;
+        .flex(flex, center, center);
+        flex-direction: column;
+        margin: 0 auto;
+
+        @media @tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .card {
+            width: 90%;
+            
+            margin: 2% 0;
+            background-color: @white; 
+            border: 2px solid @white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            
+            @media @tablet {
+                width: 40%;
+                height: 450px;
+            }
+        }
+       
+        .bungalow{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media @tablet {
+                flex-direction: column;
+            }
+        }
+                
+        img {
+            width: 300;
+            height: 200px;
+            padding: 2%;
+            border: 2px solid cadetblue;
+        }
+        .card-text{
+            border: 2px solid @blue-grey;
+            padding: 2%;
+            margin: 2%;
+            line-height: 1.5;
+            background-color: cadetblue;
+            color: @white; 
+        }
+        h2{
+            text-align: center;
+            padding: 1%;
+            font-weight: bold;
+            color: @dk-blue;
+        }
+        img .puzzle-img {
+            align-self: center;
+            margin: 0 auto;
+            
+        }        
+    }
+    .register {
+       border: red;
+    }
+    
+    
+}
+
+//Featured Story
+.story{
+    width: 85%;
+    margin: 0 auto;
+    background: @dk-blue;
+    border: 1px solid @white;
+
+    .story-img-container{
+        display: flex;
+        background: @green;
+        color: @white;
+        padding: 8% 5%;
+        border-top: 1px solid @white;
+        border-bottom: 1px solid @white;
+
+    .story-img {
+        width: 50%;
+        margin: 0 auto;
+        margin-right: 4%;
+        border: 2px solid @white;
+        border-radius: 8px;
+    }
+    
+  }
+  h3, h4{
+     text-align: center;
+     color: @white;
+  }
+  p {
+      color: @white;
+      line-height: 1.5;
+      padding: 2%;
+  }
+  li {
+      list-style: circle;
+      list-style-position: inside;
+      padding: 2%;
+      line-height: 1.5;
+      color: @white;
+  }
+}
+

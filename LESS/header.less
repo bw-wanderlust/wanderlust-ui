@@ -1,0 +1,42 @@
+.nav-bar {
+    background-color: @dk-blue;
+    .flex(flex, space-between, center);
+    flex-direction: column;
+    margin-bottom: 2%;
+
+    @media @tablet{
+        flex-direction: row;
+    }
+
+    h1{
+        color: @white;
+        padding: 2%;
+    }
+
+    .links{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+
+        @media @tablet{
+            flex-direction: row;
+        }
+
+    a {
+        color: @white;
+        text-decoration: none;
+        align-self: center;
+        font-size: 1.1rem;
+        
+        
+
+        &:hover {
+            text-decoration: underline;
+            font-size: 1.4rem;
+        }
+    }
+    
+    
+}
+}

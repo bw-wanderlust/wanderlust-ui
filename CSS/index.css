@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Livvic', sans-serif;
+  background-color: #416165;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Shadows Into Light', cursive;
+}
+.story-text {
+  font-family: 'Dancing Script', cursive;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 2.1rem;
+}
+h4 {
+  font-size: 1.9rem;
+}
+.nav-bar {
+  background-color: #0b3948;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .nav-bar {
+    flex-direction: row;
+  }
+}
+.nav-bar h1 {
+  color: #eff1ed;
+  padding: 2%;
+}
+.nav-bar .links {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+@media (min-width: 800px) {
+  .nav-bar .links {
+    flex-direction: row;
+  }
+}
+.nav-bar .links a {
+  color: #eff1ed;
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.1rem;
+}
+.nav-bar .links a:hover {
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+footer {
+  background: #0b3948;
+  color: #eff1ed;
+  margin: 2% 0;
+  padding-top: 2%;
+}
+footer .subscription {
+  text-align: center;
+  margin: 2% 0;
+  background: #416165;
+}
+footer .subscription h3 {
+  font-weight: bold;
+  color: #721817;
+}
+footer .subscription p {
+  font-weight: bold;
+  padding: 1%;
+  line-height: 1.5;
+}
+footer .subscription button {
+  background: #721817;
+  color: #eff1ed;
+  padding: 1%;
+}
+footer .subscription button:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+footer h3 {
+  text-decoration: underline;
+  padding: 1%;
+}
+footer h4 {
+  font-size: 1.1;
+  padding: 1%;
+}
+footer .copy {
+  text-align: center;
+  margin: 5% 0;
+}
+p {
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.footer-links a {
+  color: #eff1ed;
+  text-decoration: none;
+  margin: 10%;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.slideshow-container {
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+.slideshow-container img {
+  height: auto;
+  max-height: 400px;
+  padding: 2%;
+}
+.slideshow-container .mySlides {
+  display: none;
+}
+.slideshow-container .mySlides .numbertext {
+  color: #eff1ed;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slideshow-container .mySlides .text {
+  color: #eff1ed;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding-top: 4%;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  text-align: center;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-container {
+  max-width: 500px;
+}
+@media (min-width: 800px) {
+  .main-container {
+    max-width: 800px;
+  }
+}
+.main-container .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .main-container .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.main-container .card-container .card {
+  width: 90%;
+  margin: 2% 0;
+  background-color: #eff1ed;
+  border: 2px solid #eff1ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .main-container .card-container .card {
+    width: 40%;
+    height: 450px;
+  }
+}
+.main-container .card-container .bungalow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .main-container .card-container .bungalow {
+    flex-direction: column;
+  }
+}
+.main-container .card-container img {
+  width: 300;
+  height: 200px;
+  padding: 2%;
+  border: 2px solid cadetblue;
+}
+.main-container .card-container .card-text {
+  border: 2px solid #416165;
+  padding: 2%;
+  margin: 2%;
+  line-height: 1.5;
+  background-color: cadetblue;
+  color: #eff1ed;
+}
+.main-container .card-container h2 {
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  color: #0b3948;
+}
+.main-container .card-container img .puzzle-img {
+  align-self: center;
+  margin: 0 auto;
+}
+.main-container .register {
+  border: red;
+}
+.story {
+  width: 85%;
+  margin: 0 auto;
+  background: #0b3948;
+  border: 1px solid #eff1ed;
+}
+.story .story-img-container {
+  display: flex;
+  background: #306b34;
+  color: #eff1ed;
+  padding: 8% 5%;
+  border-top: 1px solid #eff1ed;
+  border-bottom: 1px solid #eff1ed;
+}
+.story .story-img-container .story-img {
+  width: 50%;
+  margin: 0 auto;
+  margin-right: 4%;
+  border: 2px solid #eff1ed;
+  border-radius: 8px;
+}
+.story h3,
+.story h4 {
+  text-align: center;
+  color: #eff1ed;
+}
+.story p {
+  color: #eff1ed;
+  line-height: 1.5;
+  padding: 2%;
+}
+.story li {
+  list-style: circle;
+  list-style-position: inside;
+  padding: 2%;
+  line-height: 1.5;
+  color: #eff1ed;
+}
