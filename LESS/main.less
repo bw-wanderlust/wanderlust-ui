@@ -77,6 +77,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+
+            #register {
+                width: 80%;
+            }
         }
         
         .card {
@@ -94,6 +98,22 @@
                 height: 450px;
             }
         }
+        .card-bottom {
+            width: 90%;
+            
+            margin: 2% 0;
+            background-color: @white; 
+            border: 2px solid @white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            
+            @media @tablet {
+                width: 80%;
+                height: 450px;
+            }
+        }
+
        
         .bungalow{
             display: flex;
@@ -104,6 +124,7 @@
                 flex-direction: column;
             }
         }
+        
                 
         img {
             width: 300;
@@ -131,12 +152,9 @@
             
         }        
     }
-    .register {
-       border: red;
-    }
-    
     
 }
+
 
 //Featured Story
 .story{

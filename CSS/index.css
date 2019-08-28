@@ -333,6 +333,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .main-container .card-container #register {
+    width: 80%;
+  }
 }
 .main-container .card-container .card {
   width: 90%;
@@ -346,6 +349,21 @@ p {
 @media (min-width: 800px) {
   .main-container .card-container .card {
     width: 40%;
+    height: 450px;
+  }
+}
+.main-container .card-container .card-bottom {
+  width: 90%;
+  margin: 2% 0;
+  background-color: #eff1ed;
+  border: 2px solid #eff1ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .main-container .card-container .card-bottom {
+    width: 80%;
     height: 450px;
   }
 }
@@ -382,9 +400,6 @@ p {
 .main-container .card-container img .puzzle-img {
   align-self: center;
   margin: 0 auto;
-}
-.main-container .register {
-  border: red;
 }
 .story {
   width: 85%;
