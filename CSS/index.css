@@ -189,6 +189,17 @@ h4 {
     font-size: 2.1;
   }
 }
+button {
+  background: #721817;
+  color: #eff1ed;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+  font-size: 1.5rem;
+}
+button:hover {
+  font-size: 1.8rem;
+}
 .nav-bar {
   background-color: #0b3948;
   display: flex;
@@ -387,13 +398,13 @@ p {
 @media (min-width: 800px) {
   .main-container .card-container .card {
     width: 40%;
-    height: 450px;
+    height: 425px;
   }
 }
 @media (min-width: 1000px) {
   .main-container .card-container .card {
     width: 48%;
-    height: 400px;
+    height: 475px;
     border: 2px solid #0b3948;
   }
 }
@@ -441,7 +452,7 @@ p {
 .main-container .card-container .card-text {
   border: 2px solid #416165;
   padding: 2%;
-  margin: 2%;
+  margin: 3% 2%;
   line-height: 1.5;
   background-color: cadetblue;
   color: #eff1ed;
